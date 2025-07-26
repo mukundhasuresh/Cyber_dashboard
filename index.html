@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cyber Threat Monitoring Dashboard</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    <h1>Cyber Threat Monitoring Dashboard</h1>
+  </header>
+
+  <main>
+    <!-- Section 1: Real-Time Alerts -->
+    <section id="alerts-section">
+      <h2>Real-Time IDS Alerts</h2>
+      <div id="alerts"></div>
+    </section>
+
+    <!-- Section 2: SHA Hash Checker -->
+    <section id="hash-section">
+      <h2>SHA-256 Hash Checker</h2>
+      <textarea id="inputText" placeholder="Enter text to hash..."></textarea>
+      <button onclick="generateHash()">Generate Hash</button>
+      <p><strong>Hash:</strong> <span id="hashOutput"></span></p>
+    </section>
+
+    <!-- Section 3: Network Traffic Visualization -->
+    <section id="traffic-section">
+      <h2>Network Traffic Monitor</h2>
+      <canvas id="trafficChart"></canvas>
+    </section>
+
+    <!-- Section 4: Blockchain Alert Log -->
+    <section id="blockchain-section">
+      <h2>Blockchain Alert Log</h2>
+      <div id="blockchain"></div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Mukundha suresh | Last Sync: <span id="syncTime"></span></p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
